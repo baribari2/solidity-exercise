@@ -1,0 +1,18 @@
+on: [push]
+
+name: solidity-exercise-tests
+
+jobs:
+  check:
+    name: Solidity Exercise
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          
+      - name: foundry-toolchain
+        uses: foundry-rs/foundry-toolchain@v1.0.9
+
+      - name: Run tests
+        run: forge test -vvv

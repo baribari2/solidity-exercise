@@ -1,4 +1,6 @@
-**NOTE**: This exercise is used by ledger to test potential candidates, it has been created for this purposes.
+**NOTE**: This is my solution to the ledger solidity exercise.
+- This repository has been converted to foundry - clone this repository and run `forge test -vvv`
+- This was merely for fun, I am not working, nor interviewing at Ledger
 
 
 # Ledger web3 exercise
